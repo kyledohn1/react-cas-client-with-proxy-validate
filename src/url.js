@@ -75,7 +75,7 @@ const getValidateUrl = (cas, ticket) => {
   let path = '';
   switch (cas.version) {
     case constant.CAS_VERSION_2_0:
-      path = 'serviceValidate';
+      path = 'proxyValidate';
       break;
     case constant.CAS_VERSION_3_0:
       path = 'p3/serviceValidate';
