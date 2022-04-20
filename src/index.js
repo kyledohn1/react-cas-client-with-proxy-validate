@@ -119,7 +119,7 @@ class CasClient {
                             let successes =
                               response['cas:authenticationSuccess'];
                             if (successes.length) {
-                              let user = successes[0]['cas:user'][0];
+                              let user = successes[0]['cas:hargray_attributes_yaml'][0];
 
                               let pgtIou = null;
                               if (!util.isEmpty(this.proxy_callback_url)) {
